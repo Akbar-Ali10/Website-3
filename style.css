@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    background-color: #ffe35988;
+}
+.header-logo{
+    animation: change 7s ease infinite;
+}
+
+@keyframes change {
+    0%{
+        color: #FFE259;
+    }50%{
+        color: aqua;
+    }
+}
+.header nav ul li{
+   animation: change 1.3s ease infinite;
+}
+@keyframes change {
+    0%{
+        color: #7759ff;
+    }50%{
+        color: forestgreen;
+    }100%{
+        color:chocolate;
+    }
+}
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:20px ;
+}
+.header nav ul{
+    display: flex;
+    list-style: none;
+    
+   
+   
+}
+.header nav  ul li{
+   padding: 0 30px;
+  
+    
+}
+
+.header-btn button{
+    margin-left: 200px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background:#FFE259;
+    color: white;
+    border: 1px solid #FFE259;
+    
+}
+.icons img{
+    padding: 0 7px;
+
+}
+/* //////////////////////////////////////////////////////// */
+
+.section-main{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.sec-h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.sec-p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.sec-btn button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid #FFE259;
+    background-color: #F9D423;
+
+}
+.sec-img{
+    margin-left: 300px;
+}
+
+
+/* /////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1191px) {
+    
+    .header nav  ul li{
+        margin: 0px;
+    }
+    .header-btn button{
+        padding: 8px 20px;
+    }
+    
+}
+@media screen and (max-width: 1183px) {
+    .header-btn button{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1191px) {
+    
+    .header-main{
+        flex-direction: column;
+    }
+    .header nav  ul li{
+        padding-top: 20px;
+    }
+    
+}
+@media screen and (max-width: 972px) {
+    .header nav  ul {
+        flex-direction: column;
+        line-height: 10px;
+    }
+    .section-main{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 921px) {
+    .sec-img {
+        margin-right: 100px;
+        text-align: center;
+    }
+}
